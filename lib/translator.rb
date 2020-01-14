@@ -21,7 +21,7 @@ def get_japanese_emoticon(file_path, eng_emoticon)
   if !load_library(file_path)[:get_emoticon][eng_emoticon]
     return "Sorry, that emoticon was not found"
   else
-    return load_library(file_path)[get_emoticon][eng_emoticon]
+    return load_library(file_path)[:get_emoticon][eng_emoticon]
   end
 end
 
@@ -29,6 +29,6 @@ def get_english_meaning(file_path, jap_emoticon)
   if !load_library(file_path)[:get_meaning][jap_emoticon]
     return "Sorry, that emoticon was not found"
   else
-    return load_library(file_path)[get_meaning][jap_emoticon]
+    return load_library(file_path)[:get_meaning][jap_emoticon]
   end
 end
