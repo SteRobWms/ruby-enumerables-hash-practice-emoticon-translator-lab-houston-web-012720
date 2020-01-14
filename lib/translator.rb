@@ -5,7 +5,7 @@ require 'yaml'
 
 def load_library(file_path)
   loadme = YAML.load_file(file_path)
-  p loadme[:angel]
+  loadme
   # code goes here
 end
 
