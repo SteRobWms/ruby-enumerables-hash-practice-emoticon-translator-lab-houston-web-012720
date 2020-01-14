@@ -5,10 +5,11 @@ require 'yaml'
 
 def load_library(file_path)
   loadme = YAML.load_file(file_path)
-  loadme
+  puts loadme[:angel]
   # code goes here
 end
 
+load_library('lib/emoticons.yml')
 def get_japanese_emoticon(eng_emoticon)
   # code goes here
 end
