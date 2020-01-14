@@ -7,7 +7,7 @@ def load_library(file_path)
   loadme = YAML.load_file(file_path)
   translatorhash = {get_meaning: {}, get_emoticon: {}}
   loadme.each_key do |k|
-    translatorhash[:get_meaning][k][1] = k
+    translatorhash[:get_meaning][loadme[k][1]] = k
   puts translatorhash
   end
 
