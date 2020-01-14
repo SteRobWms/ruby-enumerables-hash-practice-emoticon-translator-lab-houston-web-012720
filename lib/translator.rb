@@ -5,7 +5,7 @@ require 'yaml'
 
 def load_library(file_path)
   loadme = YAML.load_file(file_path)
-  pp loadme["angel"]
+  translatorhash = {get_meaning: {}, get_emoticon: {}}
   # code goes here
 end
 
