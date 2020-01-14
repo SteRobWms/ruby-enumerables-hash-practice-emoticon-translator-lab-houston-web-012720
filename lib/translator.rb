@@ -12,12 +12,13 @@ def load_library(file_path)
   loadme.each_key do |k|
     translatorhash[:get_emoticon][loadme[k][0]] = loadme[k][1]
   end
-  pp translatorhash
+  # pp translatorhash
 end
 
-load_library('lib/emoticons.yml')
+# load_library('lib/emoticons.yml')
+
 def get_japanese_emoticon(eng_emoticon)
-  # code goes here
+
 end
 
 def get_english_meaning(jap_emoticon)
