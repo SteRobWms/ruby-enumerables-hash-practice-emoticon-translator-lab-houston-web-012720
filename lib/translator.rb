@@ -12,7 +12,7 @@ def load_library(file_path)
   loadme.each_key do |k|
     translatorhash[:get_emoticon][loadme[k][0]] = loadme[k][1]
   end
-  # pp translatorhash
+  translatorhash
 end
 
 # load_library('lib/emoticons.yml')
