@@ -22,6 +22,7 @@ def get_japanese_emoticon(file_path, eng_emoticon)
     puts "Sorry, I don't have a Japanese emotion for #{eng_emoticon}! Try again?"
   else
     load_library(file_path)[get_emoticon][eng_emoticon]
+  end
 end
 
 def get_english_meaning(file_path, jap_emoticon)
@@ -29,4 +30,5 @@ def get_english_meaning(file_path, jap_emoticon)
     puts "Sorry, even I don't know what #{jap_emoticon} means! Try again?"
   else
     load_library(file_path)[get_meaning][jap_emoticon]
+  end
 end
