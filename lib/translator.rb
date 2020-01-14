@@ -9,10 +9,10 @@ def load_library(file_path)
   # code goes here
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(eng_emoticon)
   # code goes here
 end
 
-def get_english_meaning
+def get_english_meaning(jap_emoticon)
   # code goes here
 end
