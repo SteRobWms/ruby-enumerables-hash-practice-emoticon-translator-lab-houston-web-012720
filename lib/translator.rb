@@ -9,6 +9,8 @@ def load_library(file_path)
   loadme.each_key do |k|
     translatorhash[:get_meaning][loadme[k][1]] = k
   end
+  loadme.each_key do |j|
+    translatorhash[:get_emoticon][loadme[k][0]] = loadme[k][1]
   pp translatorhash
 
 end
