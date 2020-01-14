@@ -6,7 +6,11 @@ require 'yaml'
 def load_library(file_path)
   loadme = YAML.load_file(file_path)
   translatorhash = {get_meaning: {}, get_emoticon: {}}
-  # code goes here
+  loadme.each_key do |k|
+    translatorhash[get_meaning][k][1]: k
+  puts translatorhash
+  end
+
 end
 
 load_library('lib/emoticons.yml')
