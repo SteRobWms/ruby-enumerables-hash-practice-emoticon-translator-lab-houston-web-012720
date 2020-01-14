@@ -17,10 +17,10 @@ end
 
 # load_library('lib/emoticons.yml')
 
-def get_japanese_emoticon(eng_emoticon)
-
+def get_japanese_emoticon(file_path, eng_emoticon)
+  load_library(file_path)[get_emoticon][eng_emoticon]
 end
 
-def get_english_meaning(jap_emoticon)
+def get_english_meaning(file_path, jap_emoticon)
   # code goes here
 end
