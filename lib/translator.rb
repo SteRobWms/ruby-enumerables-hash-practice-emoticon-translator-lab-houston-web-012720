@@ -5,7 +5,7 @@ require 'yaml'
 
 def load_library(file_path)
   loadme = YAML.load_file(file_path)
-  puts loadme
+  pp loadme
   # code goes here
 end
 
