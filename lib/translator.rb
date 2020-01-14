@@ -19,7 +19,7 @@ end
 
 def get_japanese_emoticon(file_path, eng_emoticon)
   if !load_library(file_path)[:get_emoticon][eng_emoticon]
-    return "Sorry, I don't have a Japanese emotion for #{eng_emoticon}! Try again?"
+    return "Sorry, that emoticon was not found"
   else
     return load_library(file_path)[get_emoticon][eng_emoticon]
   end
